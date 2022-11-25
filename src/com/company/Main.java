@@ -5,8 +5,13 @@ import java.util.Scanner;
 public class Main {
     public static final String[] NUMBER_ROMAN = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
     public static final String[] NUMBER_ROMAN1 = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
-    public static final String[] NUMBER_ROMAN2 = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII",
-            "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
+    public static final String[] NUMBER_ROMAN2 = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI",
+            "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII",
+            "XXVIII", "XXIX", "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII", "XXXIX", "XL", "XLI", "XLII",
+            "XLIII", "XLIV", "XLV", "XLVI", "XLVII", "XLVIII", "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII", "LVIII", "LIX", "LX",
+            "LXI", "LXII", "LXIII", "LXIV", "LXV", "LXVI", "LXVII", "LXVIII", "LXIX", "LXX", "LXXI", "LXXII", "LXXIII", "LXXIV", "LXXV", "LXXVI",
+            "LXXVII", "LXXVIII", "LXXIX", "LXXX", "LXXXI", "LXXXII", "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX",
+            "XC", "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"};
 
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
@@ -90,32 +95,6 @@ public class Main {
             } else if (input.contains("*")) {
                 int r;
                 r = number3 * number4;
-                switch (r) {
-                    case 30:
-                        r = 21;
-                        break;
-                    case 40:
-                        r = 22;
-                        break;
-                    case 50:
-                        r = 23;
-                        break;
-                    case 60:
-                        r = 24;
-                        break;
-                    case 70:
-                        r = 25;
-                        break;
-                    case 80:
-                        r = 26;
-                        break;
-                    case 90:
-                        r = 27;
-                        break;
-                    case 100:
-                        r = 28;
-                        break;
-                }
                 result = NUMBER_ROMAN2[r - 1];
             } else if (input.contains("/")) {
                 if (number3 < number4) {
