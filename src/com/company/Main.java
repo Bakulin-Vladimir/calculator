@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-    public static final String[] NUMBER_ROMAN = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+    public static final String[] NUMBER_ARABIC = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
     public static final String[] NUMBER_ROMAN1 = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
     public static final String[] NUMBER_ROMAN2 = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI",
             "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII",
@@ -46,7 +46,7 @@ public class Main {
         boolean p = true;
         String result = "";
         while (p) {
-            for (String s : NUMBER_ROMAN) {
+            for (String s : NUMBER_ARABIC) {
                 if (s.equals(st[0].trim())) n1 = true;
                 if (s.equals(st[1].trim())) n2 = true;
             }
